@@ -1,0 +1,7 @@
+CREATE DATABASE db1 ; 
+create user user3 identified by 'user3' ;
+grant all  on db1.* to user3@'%';
+use db1 ;
+create table client (id int,nom varchar(50));
+insert into client values (50,'alibensalah');
+select *  from client ; 
